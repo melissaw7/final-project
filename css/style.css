@@ -1,0 +1,27 @@
+#artgallery{
+    display: grid;
+    width: 90%;
+    grid-template-columns: 25% 25% 25%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#artgallery img{
+    grid-column: span 1;
+    max-width: 100%;
+    height: auto;
+}
+
+#travelgallery{
+    display: grid;
+    width: 90%;
+    grid-template-columns: 25% 25% 25%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#travelgallery img{
+    grid-column: span 1;
+    max-width: 100%;
+    height: auto;
+}
