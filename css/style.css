@@ -1,27 +1,115 @@
 #artgallery{
     display: grid;
-    width: 90%;
     grid-template-columns: 25% 25% 25%;
     justify-content: space-around;
     align-items: center;
+    background-color: black;
+    border: 30px solid black;
 }
-
 #artgallery img{
     grid-column: span 1;
     max-width: 100%;
     height: auto;
 }
-
 #travelgallery{
     display: grid;
-    width: 90%;
+    width: 100%;
     grid-template-columns: 25% 25% 25%;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
-
 #travelgallery img{
     grid-column: span 1;
+    width: 100%;
     max-width: 100%;
     height: auto;
 }
+h1{
+    font-size: 50px;
+    margin: 20px 30px 10px 30px;
+}
+body>header {
+    position: sticky;
+    top: 0;
+}
+header li {
+    list-style-type: none;  
+}
+header {
+    background-color: white; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.nav_links {
+    display: flex;
+}
+
+.Intro{
+    font-family: Arial, Helvetica, sans-serif;
+    border: 30px solid rgb(94, 120, 157);
+    color: white;
+    font-size: 30px;
+    background-color: rgb(94, 120, 157);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.AboutMe{
+    display: flex;
+    background-color: rgb(94, 120, 157);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 30px;
+}
+.AboutMe img{
+    margin: 2px;
+    width: 50%;
+    border-radius: 70%;
+}
+.OutsideSchool{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* padding: 50px; */
+    font-size: 20px;
+    color:rgb(94, 120, 157);
+}
+
+footer{
+    font-size: 20px;
+}
+/* for screen size of 900px */
+@media screen and (min-width: 700px) {
+    h1{
+        font-size: 50px;
+        margin: 20px 30px 10px 30px;
+    }
+    .nav_links {
+    display: flex;
+    margin-top: 15px;
+    justify-self: space-between;
+    font-size: 20px;
+    margin-right: 3px;
+    }
+    .nav_links > li{
+    margin: 15px;
+    padding: 5px;
+    }
+    #artgallary{
+        border: 100px solid black;
+    }
+    .AboutMe{
+        font-size: 30px;
+    }
+    .OutsideSchool{
+        font-size: 30px;
+    }
+}
+
