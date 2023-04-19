@@ -1,8 +1,8 @@
 #artgallery{
     display: grid;
-    grid-template-columns: 25% 25% 25%;
     justify-content: space-around;
     align-items: center;
+    padding:50px;
     background-color: black;
     border: 30px solid black;
 }
@@ -10,6 +10,7 @@
     grid-column: span 1;
     max-width: 100%;
     height: auto;
+    padding: 20px;
 }
 #travelgallery{
     display: grid;
@@ -36,16 +37,23 @@ header li {
     list-style-type: none;  
 }
 header {
-    background-color: white; 
-    display: flex;
-    flex-direction: column;
+    background-color: white;
     align-items: center;
-    text-align: center;
+    text-align: center; 
 }
 .nav_links {
-    display: flex;
-    color:black;
+    display:flex;
+    justify-content: center;
+}
+a:link{
     text-decoration: none;
+}
+nav .active{
+border-radius: 50px;
+padding: 10px;
+background-color: rgb(94, 120, 157);
+color:white;
+text-decoration: underline;
 }
 .nav_links > li{
     margin: 15px;
@@ -63,6 +71,12 @@ header {
     text-align: center;
     align-items: center;
 }
+.Intro img{
+    display:none;
+}
+.Intro p{
+    display:none;
+}
 .AboutMe{
     display: flex;
     background-color: rgb(94, 120, 157);
@@ -72,11 +86,21 @@ header {
     font-family: Arial, Helvetica, sans-serif;
     flex-direction: row-reverse;
     align-items: center;
-    padding: 30px;
+    padding: 50px;
+}
+.Intro div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.AboutMe p{
+    padding: 40px;
+    line-height: 40px;
 }
 .AboutMe img{
-    margin: 2px;
-    width: 50%;
+    border: 3px dotted white;
+    margin: 45px;
+    width: 30%;
     border-radius: 70%;
 }
 .OutsideSchool{
@@ -87,27 +111,200 @@ header {
     font-size: 20px;
     color:rgb(94, 120, 157);
 }
-
 footer{
     font-size: 20px;
-    margin: 20px;
+    padding: 20px;
+    text-align: end;
 }
+/* Project page styling */
+.clubs{
+    margin:30px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(94, 120, 157);
+
+}
+.clubs>div{
+    margin-bottom: 40px;
+    border: 3px solid rgb(94, 120, 157);
+    padding: 40px;
+    border-radius: 40px;
+}
+.clubs>div:hover{
+    background-color:rgba(105, 133, 173, 0.765);;
+    color: white;
+
+}
+
+.clubs>div>h3{
+    font-size: 30px;
+}
+
+#link-btn1{
+    background-color: rgb(94, 120, 157);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+}
+#link-btn2{
+    background-color: rgb(94, 120, 157);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+}
+#link-btn3{
+    background-color: rgb(94, 120, 157);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.Projects{
+    position: sticky;
+    top: 97px;
+    padding: 30px;
+    background-color: white;
+}
+
+.Figma{
+    margin:30px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(94, 120, 157);
+}
+.Figma>div{
+    margin-bottom: 40px;
+    border: 3px solid rgb(94, 120, 157);
+    border-radius: 40px;
+}
+.Figma>div>h3{
+    font-size: 30px;
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 10%;
+    top: 5%;
+    width: 80%;
+    height: 80%;
+    background-color: rgb(94, 120, 157);
+    overflow: hidden;
+  }
+
+  #resumeButton {
+      width: 100%;
+      height: 100%;
+  }
+
+#resumeModal{
+    border-radius: 10px;
+    border: 5px solid #373737;
+    padding: none;
+    overflow: scroll;
+}
+  
+  .modalContent {
+    background-color: rgb(94, 120, 157);
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 10px 10px 0 10px;
+    padding-right: none;
+  }
+
+  embed {
+      width: 99%;
+      height: 93%;
+      display: inline-block;
+      overflow: scroll;
+  }
+  
+  .close {
+    color: #373737;
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  .close:hover, .close:focus {
+    background-color: rgb(94, 120, 157);
+    cursor: pointer;
+  }
+
+  .mecontainer {
+    animation-name: animationOne;
+    animation-duration: 4s; 
+    animation-timing-function: ease-in-out;
+  }
+
+  .resume {
+      height: 100%;
+  }
+
+  .resume_icon{
+      background-color: transparent;
+  }
+/* End Modal Styling */
+
+
 /* for screen size of 900px */
 @media screen and (min-width: 700px) {
     h1{
         font-size: 50px;
         margin: 20px 30px 10px 30px;
     }
+    header{
+        display: flex;
+        justify-content: space-around;
+    }
+    .Intro img{
+        display: inline-block;
+    }
+    #artgallery{
+        grid-template-columns: 1fr 1fr;
+        gap: 0px 70px; 
+    }
     .nav_links {
-    flex-direction: row;
     margin-top: 15px;
-    justify-self: space-between;
     font-size: 20px;
     margin-right: 3px;
     }
-    #artgallary{
-        border: 100px solid black;
+    .Intro h2{
+        padding:30px;
+        font-size: 50px;
     }
+    .Intro p{
+        display:inline;
+    }
+    .Intro h3{
+        display:none;
+    }
+    .Intro p{
+        padding-top: 70px;
+        padding-bottom: 100px;
+    } 
     .AboutMe{
         font-size: 30px;
     }
@@ -115,5 +312,40 @@ footer{
         font-size: 30px;
         padding: 50px;
     }
+    .clubs >img{
+        width: 50%;
+    }
+    .clubs{
+        flex-direction: column-reverse
+    }
+    .Figma{
+        flex-direction: row;
+    }
+    .Figma div{
+        margin:30px;
+        width:50%
+    }
+
+}
+@media screen and (min-width: 1000px) {
+    #artgallery{
+        grid-template-columns: 25% 25% 25%;
+    }
+header{
+    justify-content: space-between;
+}
+.clubs{
+    flex-direction: row;
+}
+.clubs>div{
+    margin-bottom: 0px;
+    margin: 20px;
+}
+#Wireframes{
+    padding-left: 30px;
+}
+.Figma div{
+    border: 5px dashed rgb(94, 120, 157);
+}
 }
 

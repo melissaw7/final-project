@@ -1,8 +1,9 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <link rel="shortcut icon" type="image/png" href="images/logo_icon.png"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hind Madurai">
     <link rel="stylesheet" type="text/css" href="css/style.css">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Melissa Wang's Portfolio</title>
@@ -14,21 +15,72 @@
         <ul class="nav_links">
           <li><a href = "home.html"> Home</a></li>
           <li><a href = "artworksPage.html"> My Artworks</a></li>
+          <a class="active" href="projects.html"> My Projects</a>
           <li><a href = "contact.html"> Contact</a></li>    
         </ul>
     </nav>
   </header>
+  <a class = "skip" href="#Wireframes">Skip to Main Content</a>
   <main>
-    <h2> Project Playground </h2>
-  <p> Having experience in Computer Science and UI/UX, I've worked on some pretty cool projects! Check them out below: </p>
-  <div>
-      <h3> Coding in C++</h3>
-      <h3> Graphic Design</h3>
-      <h3> Wireframes</h3>
+    <div class="All">
+    <h2 class="Projects"> My Projects </h2>
+      <div class="clubs">
+      <div class = "Reach">
+        <h3>Reach Consulting</h3>
+        <img src="images/reachconsulting.png" alt="Picture of Reach Consulting logo" width="70%">
+        <p>Reach Consulting Group is an undergraduate, student-run, non-profit organization providing advisory services in technology, digital strategy, UX/UI, and data & business analytics. Reach is affiliated with the University of Michigan's School of Information and have a strong emphasis on technology consulting.</p>
+        <button id="link-btn1">Learn More Information</button>
+      </div>
+      <div class="MProduct">
+        <h3>MProduct</h3>
+        <img src="images/MProductlogo.png" alt="Picture of MProduct logo"width="80%">
+        <p>MProduct is an undergraduate, student-run club that provides industry and technical knowledge on students seeking to pursue a career in product management. With an emphasis on both technology and business, Mproduct seeks to provide insight on how to caeer prep with workshops, conferences, and networking opportunities. </p>
+        <button id="link-btn2">Learn More Information</button>
+      </div>
+      <div class = "MAM">
+        <h3>Michigan Advertising and Marketing</h3>
+        <img src="images/MAMlogo.png" alt="Picture of MAM logo" width="40%">
+        <p>Michigan Advertising and Marketing (MAM) is a student-organization at the University of Michigan that provides members with the opportunity to work with real businesses, and provides clients with valuable, student-generated recommendations and insights. Michigan Advertising & Marketing Club cultivates a diverse community of creative thinkers and passionate leaders who empower businesses in Ann Arbor and beyond.</p>
+        <button id="link-btn3">Learn More Information</button>
+      </div>
+    </div>
+    <h2 id="Wireframes"> Wireframes</h2>
+    <div class="Figma">
+    <div class="MLocate">
+      <h3>MLocate</h3>
+      <img src="images/mockuuups-iphone-12-mockup-perspective-right.png" alt="Mockup for MLocate navigation screen" width="70%">
+        <p>MLocate is a prototype of an app targerted towards students, staff, and parents of the University of Michigan, Ann Arbor. This app is designed mindfully of the difficulties to navigate campus buildings, specific classrooms, and on campus utilities.</p>
+    </div>
+    <div class="Grotto">
+      <h3>The Grotto</h3>
+      <img src="images/mockuuups-macbook-pro-mockup-oriented-to-the-left.png" alt="Mockup for the Grotto navigation bar on website" width="70%">
+        <p>The Grotto is currently a bar in Ann Arbor located on Main St. They needed help revamping their website so that the content wasn't all on one page</p>
+    </div>
+    </div>
   </div>
+
+
 </main>
 <footer>
+  <div class="contacts">
+    <a href = "https://www.linkedin.com/in/sydney-finkelstein/" target="_blank" aria-label="LinkedIn Logo"><i class="footer fa-brands fa-linkedin fa-2x"></i></a>
+    <a href = "https://github.com/sydneyfi" aria-label="Github Logo" target="_blank"><i class="footer fa-brands fa-github fa-2x"></i></a>
+
+    <div class="resume">
+        <button onclick="openModal()" id="resumeButton" aria-label="Resume Logo"><i class="resume_icon footer fa-brands fa-solid fa-file-lines fa-2x"></i></button>
+
+        <div class="modal" id="resumeModal">
+            <div class="modalContent" tabindex="0">
+                <span onclick="closeModal()" class="close">&times;</span>
+                <embed src="docs/Wang, Melissa.pdf"/> 
+            </div>
+        </div>
+
+    </div>
+</div>
   <p>Melissa Wang &copy; 2023</p>
 </footer>
+  <script src="js/portfolio.js"></script>
+  <script src="dist/js/lightbox-plus-jquery.js"></script>
 </body>
-</html> -->
+</html>
