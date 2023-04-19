@@ -1,3 +1,14 @@
+.skip{
+    position: absolute;
+    left: -500px;
+    overflow: hidden;
+
+}
+.skip:focus{
+    left: auto;
+    overflow: visible;
+}
+
 #artgallery{
     display: grid;
     justify-content: space-around;
